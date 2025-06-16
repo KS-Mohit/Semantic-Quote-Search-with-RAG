@@ -11,14 +11,14 @@ Build a semantic quote retrieval system that:
 - Offers a user-friendly interface using Streamlit.
 
 
-## 🛠Technologies Used
+## Technologies Used
 
 | Component               | Tool/Library Used                        
 |------------------------|-------------------------------------------------------------------------------------|
 | Dataset                | [`Abirate/english_quotes`](https://huggingface.co/datasets/Abirate/english_quotes)  |
-| Embedding Model        | `all-MiniLM-L6-v2` from SentenceTransformers                                        |
+| Embedding Model        | `DistilBERT` from SentenceTransformers                                        |
 | Retriever              | `FAISS` for vector similarity search                                                |
-| LLM for Generation     | `distilgpt2` (lightweight transformer for text generation)                          |
+| LLM for Generation     | `Ollama` (lightweight transformer for text generation)                          |
 | Evaluation Framework   | `RAGAS`                                                                             |
 | Frontend               | `Streamlit`                                                                         |
 
