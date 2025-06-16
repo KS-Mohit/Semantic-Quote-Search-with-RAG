@@ -91,11 +91,3 @@ pip install -r requirements.txt
 # Launch the app
 streamlit run app.py
 ```
-
-
-
-## 📌 Future Improvements
-
-- Replace `distilgpt2` with more powerful open-weight models like Mistral-7B or LLaMA-3-Instruct.
-- Add metadata filtering (e.g., author gender, quote length).
-- Improve evaluation with human feedback loop or Quotient.
