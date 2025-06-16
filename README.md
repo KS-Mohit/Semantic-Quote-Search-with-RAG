@@ -18,7 +18,7 @@ Build a semantic quote retrieval system that:
 | Dataset                | [`Abirate/english_quotes`](https://huggingface.co/datasets/Abirate/english_quotes)  |
 | Embedding Model        | `DistilBERT` from SentenceTransformers                                        |
 | Retriever              | `FAISS` for vector similarity search                                                |
-| LLM for Generation     | `Ollama` (lightweight transformer for text generation)                          |
+| LLM for Generation     | `Ollama`                         |
 | Evaluation Framework   | `RAGAS`                                                                             |
 | Frontend               | `Streamlit`                                                                         |
 
@@ -30,7 +30,7 @@ Build a semantic quote retrieval system that:
 
 ## 2. Model Fine-Tuning
 
-- Model: `sentence-transformers/all-MiniLM-L6-v2`
+- Model: `DistilBERT`
 - Task: Retrieve relevant quotes based on a user query (e.g., "Quotes about happiness by Oscar Wilde").
 - Fine-tuned using cosine similarity loss on quote-query pairs.
 - Saved model locally (`/model/` directory).
@@ -43,7 +43,7 @@ Build a semantic quote retrieval system that:
 - On query input, the system retrieves top-k similar quotes based on vector similarity.
 
 ### Generation:
-- Retrieved quote context passed to `distilgpt2`.
+- Retrieved quote context passed to `Ollama`.
 - Prompt engineering used to construct coherent answers from retrieved data.
 - Structured output includes:
   - Relevant quotes
