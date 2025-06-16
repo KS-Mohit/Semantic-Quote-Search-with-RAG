@@ -1,0 +1,10 @@
+sentence-transformers
+transformers
+datasets
+faiss-cpu
+streamlit
+ragas
+torch
+scikit-learn
+pandas
+numpy
